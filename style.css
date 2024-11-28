@@ -4,6 +4,9 @@
 
 html {
    font-size: 62.5%;
+   font-family: "Playfair Display", serif;
+   font-weight: 200;
+   font-style: normal;
 }
 /* .playfair-display-<uniquifier> {
    font-family: "Playfair Display", serif;
@@ -34,14 +37,18 @@ html {
 body {
    font-size: 1.6rem;
    background-color: #FFFFFF;
+   max-width: 1200px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .avatar-section {
    position: relative;
    z-index: -1;
-   background-color: blue;
    display: flex;
    justify-content: center;
+   min-height: 80dvh;
 }
 
 .avatar-backdrop {
@@ -56,7 +63,6 @@ body {
 
 .avatar {
    position: absolute;
-   background: red;
    width: 85dvw;
    height: 70dvh;
    z-index: 2;
@@ -66,6 +72,77 @@ body {
    background-size: cover;
 }
 
+.profile-name {
+   font-size: 5rem;
+   font-weight: bold;
+   letter-spacing: .4rem;
+   position: absolute;
+   bottom: 0rem;
+   margin: 3rem;
+   color: #262626;
+}
 
+.about {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 3rem 1rem;
+   gap: 1rem;
+}
+
+.about article {
+   color: #8B8B8B;
+}
+
+.profile-links {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+.profile-links i {
+   font-size: 2.5rem;
+   color: #000;
+}
+
+.project-section {
+   display: flex;
+   flex-direction: column;
+}
+
+.project-title {
+   display: flex;
+   justify-content: center;
+   background-color: red;
+   flex-basis: 100%;
+}
+
+.project-container {
+   padding: 4rem;
+}
+
+.projects {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-details {
+   padding: 0rem 3rem 8rem;
+}
+
+.project-image {
+   background-color: blue;
+   height: 25rem;
+}
+
+.project-name {
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+   padding: 2rem;
+}
+
+.project-name h3 {
+   margin-right: auto;
+}
 
 
