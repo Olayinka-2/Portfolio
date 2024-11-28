@@ -53,12 +53,12 @@ body {
 
 .avatar-backdrop {
    background: #0891B2;
-   height: 75dvh;
+   height: 100%;
    width: 100vw;
    transform: skewY(-40deg);
    position: absolute;
    z-index: 1;
-   top: -20rem;
+   top: -25rem;
 }
 
 .avatar {
@@ -100,7 +100,7 @@ body {
    gap: 2rem;
 }
 
-.profile-links i {
+.profile-links i, .media-handles i {
    font-size: 2.5rem;
    color: #000;
 }
@@ -108,21 +108,29 @@ body {
 .project-section {
    display: flex;
    flex-direction: column;
+   margin: 6rem auto;
+   align-items: center;
 }
 
 .project-title {
    display: flex;
    justify-content: center;
-   background-color: red;
    flex-basis: 100%;
 }
 
 .project-container {
-   padding: 4rem;
+   padding: 2rem 4rem;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 0 auto;
+   justify-content: center;
+   gap: 6rem 3rem;
 }
 
 .projects {
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   flex-basis: 45rem;
 }
 
 .project-details {
@@ -145,4 +153,46 @@ body {
    margin-right: auto;
 }
 
+.project-description {
+   color: #575757;
+}
 
+footer {
+   background: #0891B2;
+   color: #fff;
+}
+
+.contact-section {
+   margin: 6rem 4rem;
+}
+
+.contact-section h1 {
+   text-align: center;
+   font-weight: 600;
+   font-size: 3.5rem;
+   margin-bottom: 2rem;
+}
+
+.contact-section h1 + p {
+   font-size: 2rem;
+   font-weight: 400;
+   margin-bottom: 2rem;
+}
+
+.contact-section p:nth-child(5) {
+   margin-top: 2rem;
+}
+
+.media-handles {
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+   margin-top: 2rem;
+}
+
+.footer-image {
+   min-height: 50rem;
+   background-image: url("./images/HR.jpg");
+   background-position: center;
+   background-size: cover;
+}
