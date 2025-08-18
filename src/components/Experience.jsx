@@ -1,7 +1,7 @@
 const Experience = () => {
   return (
     <>
-       <section id="experience" className="relative mb-24">
+       <section id="Experience" className="relative mb-24">
                 <div>
                   <div className="sticky top-0 z-30 bg-slate-950 py-2">
                     <p className="mb-6 block lg:hidden text-slate-100 font-bold">

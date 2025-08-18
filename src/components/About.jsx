@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <>
-              <section id="about" className="pt-6 mb-24">
+              <section id="About" className="pt-6 mb-24">
                 <div className="flex flex-col gap-6 lg:p-6">
                   <h2 className="block lg:hidden mb-6 text-slate-100 text-3xl font-bold">
                     About

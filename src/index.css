@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.active-link .line {
+  @apply w-16 bg-white;
+}
+
+.active-link span:last-child {
+  @apply text-white font-semibold;
+}
