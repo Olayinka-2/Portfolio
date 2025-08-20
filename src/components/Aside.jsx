@@ -1,5 +1,5 @@
 import {Link} from "react-scroll";
-import {Github, Facebook, Linkedin, Server} from "lucide-react";
+import {Github, Facebook, Linkedin, Twitter} from "lucide-react";
 
 const Aside = () => {
   return (
@@ -8,10 +8,10 @@ const Aside = () => {
               <header className="px-3  mb-5">
                 <h1 className="font-bold md:text-5xl text-3xl text-slate-200 ">Israel Olayinka</h1>
                 <p className=" text-md md:text-xl font-bold text-slate-200 mt-2">
-                  Front End Engineer
+                  FrontEnd Developer
                 </p>
                 <p className="mt-4 text-slate-400">
-                  I build accessible, pixel-perfect digital experiences for the web.
+                  I build accessible, pixel-perfect digital experiences for the business owners.
                 </p>
 
                 <nav className="mt-10 hidden lg:flex flex-col space-y-4">
@@ -48,7 +48,7 @@ const Aside = () => {
                     <Linkedin className="text-slate-400 hover:text-emerald-400 transition cursor-pointer"/>
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <Server className="text-slate-400 hover:text-emerald-400 transition cursor-pointer"/>
+                    <Twitter className="text-slate-400 hover:text-emerald-400 transition cursor-pointer"/>
                   </a>
                 </div>
               </footer>

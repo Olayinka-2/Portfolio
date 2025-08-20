@@ -28,7 +28,7 @@ const Contact = () => {
         {/* Social Links */}
         <div className="flex justify-center gap-6 mt-6">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Olayinka-2"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-emerald-400 transition"
@@ -36,7 +36,7 @@ const Contact = () => {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/israel-olayinka-775305307/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-emerald-400 transition"
@@ -44,12 +44,12 @@ const Contact = () => {
             LinkedIn
           </a>
           <a
-            href="https://twitter.com/yourusername"
+            href="https://facebook.com/olayinka.israel.330/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-emerald-400 transition"
           >
-            Twitter
+            Facebook
           </a>
         </div>
 
