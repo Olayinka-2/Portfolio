@@ -3,6 +3,7 @@ import Experience from "./components/Experience";
 import Project from "./components/Project";
 import Cursor from "./components/Cursor";
 import Aside from "./components/Aside";
+import Contact from "./components/Contact";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
               <About />
               <Experience />
               <Project />
+              <Contact />
 
             </main>
           </div>

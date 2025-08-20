@@ -16,7 +16,7 @@ const Aside = () => {
 
                 <nav className="mt-10 hidden lg:flex flex-col space-y-4">
 
-                  {["About", "Experience", "Projects"].map((item) => (
+                  {["About", "Experience", "Projects", "Contact"].map((item) => (
                     <Link
                     key={item}
                     to={item}
@@ -39,16 +39,16 @@ const Aside = () => {
               <footer className="mt-auto px-3">
                 <div className="flex space-x-4 text-lg text-slate-300">
                   <a href="https://github.com/Olayinka-2" target="_blank" rel="noopener noreferrer">
-                    <Github className="cursor-pointer"/>
+                    <Github className="text-slate-400 hover:text-emerald-400 transition cursor-pointer"/>
                   </a>
                   <a href="https://facebook.com/olayinka.israel.330/" target="_blank" rel="noopener noreferrer">
-                    <Facebook className="cursor-pointer"/>
+                    <Facebook className="text-slate-400 hover:text-emerald-400 transition cursor-pointer"/>
                   </a>
                   <a href="https://www.linkedin.com/in/israel-olayinka-775305307/" target="_blank" rel="noopener noreferrer">
-                    <Linkedin className="cursor-pointer"/>
+                    <Linkedin className="text-slate-400 hover:text-emerald-400 transition cursor-pointer"/>
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <Server className="cursor-pointer"/>
+                    <Server className="text-slate-400 hover:text-emerald-400 transition cursor-pointer"/>
                   </a>
                 </div>
               </footer>
