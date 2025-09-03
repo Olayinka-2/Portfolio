@@ -3,7 +3,7 @@ import projects from "./data/ProjectData";
 const Project = () => {
   return (
     <>
-           <section id="Projects" className="relative mb-24 px-3">
+      <section id="Projects" className="relative mb-24 px-3">
                 <div>
                   <div className="sticky top-0 z-30 bg-slate-950 py-2">
                     <p className="mb-6 block lg:hidden text-slate-100 font-bold">
@@ -11,7 +11,7 @@ const Project = () => {
                     </p>
                   </div>
                   <div className="bg-slate-950 text-slate-400 space-y-8">
-  {projects.map((project, i) => (
+  {projects.slice(0,5).map((project, i) => (
     <div
       key={i}
       className="grid md:grid-cols-12 gap-6 rounded-2xl shadow-lg p-6 hover:bg-slate-900 transition border border-slate-800"
@@ -38,7 +38,7 @@ const Project = () => {
           </p>
 
           {/* Features */}
-          {project.features?.length > 0 && (
+          {project.features.length > 0 && (
             <ul className="list-disc list-inside text-sm text-slate-300 mt-3 space-y-1">
               {project.features.map((feat, idx) => (
                 <li key={idx}>{feat}</li>
