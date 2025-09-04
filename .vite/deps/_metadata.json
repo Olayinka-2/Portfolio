@@ -1,0 +1,40 @@
+{
+  "hash": "a9f8bbb0",
+  "configHash": "4accb287",
+  "lockfileHash": "7d88c71b",
+  "browserHash": "e2942e1d",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "fab8caeb",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "caf64923",
+      "needsInterop": true
+    },
+    "react-scroll": {
+      "src": "../../node_modules/react-scroll/modules/index.js",
+      "file": "react-scroll.js",
+      "fileHash": "b98a1071",
+      "needsInterop": true
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "16e6080f",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-JJSCUBFW": {
+      "file": "chunk-JJSCUBFW.js"
+    },
+    "chunk-H3AANLML": {
+      "file": "chunk-H3AANLML.js"
+    }
+  }
+}
