@@ -4,12 +4,14 @@ import Project from "./components/Project";
 import Cursor from "./components/Cursor";
 import Aside from "./components/Aside";
 import Contact from "./components/Contact";
+import { ToastContainer } from "react-toastify";
 
 
 function App() {
   return (
     <>
     <Cursor />
+    <ToastContainer />
     <div className="bg-slate-950">
       <div className="max-w-screen-xl mx-auto">
           <div className="flex flex-col lg:flex-row min-h-screen text-slate-400">

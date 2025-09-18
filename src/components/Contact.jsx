@@ -1,4 +1,33 @@
+import { useState } from "react";
+import { toast } from "react-toastify";
+
 const Contact = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "b28db99f-1dcc-4078-9717-84eba1b3d47f");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("");
+      toast.success("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      toast.error(data.message);
+      setResult("");
+    }
+  };
   return (
     <section id="Contact" className="pt-20 px-3 bg-slate-950">
       <div className="max-w-3xl mx-auto text-center space-y-6">
@@ -17,7 +46,7 @@ const Contact = () => {
           <p>
             📧{" "}
             <a
-              href="mailto:youremail@example.com"
+              href="olayinkaisrael001@gmail.com"
               className="text-emerald-400 hover:underline"
             >
               Olayinkaisrael001@gmail.com
@@ -54,7 +83,9 @@ const Contact = () => {
         </div>
 
         {/* Contact Form (Optional) */}
-        <form className="mt-8 space-y-4 max-w-lg mx-auto text-left">
+        <form className="mt-8 space-y-4 max-w-lg mx-auto text-left"
+        onSubmit={onSubmit}
+        >
           <input
             type="text"
             placeholder="Your Name"
@@ -74,7 +105,9 @@ const Contact = () => {
             type="submit"
             className="px-5 py-2 rounded-lg text-sm font-medium bg-emerald-500 text-white hover:bg-emerald-600 transition"
           >
-            Send Message
+            {
+              result ? "Sending..." : "Send Message"
+            }
           </button>
         </form>
       </div>
