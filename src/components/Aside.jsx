@@ -5,6 +5,15 @@ const Aside = () => {
   return (
     <>
       <div className="w-full lg:w-2/5 lg:sticky top-0 lg:h-screen overflow-y-auto px-6 lg:px-12 flex flex-col bg-slate-950 py-8 md:py-20">
+        <div className=" lg:hidden w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-emerald-400 shadow-lg mb-6 overflow-hidden">
+
+      <img
+  src="/profile.JPG"
+  alt="Israel Olayinka"
+  className="object-cover w-full h-auto object-center"
+/>
+        </div>
+
               <header className="px-3  mb-5">
                 <h1 className="font-bold md:text-5xl text-3xl text-slate-200 ">Israel Olayinka</h1>
                 <p className=" text-md md:text-xl font-bold text-slate-200 mt-2">
