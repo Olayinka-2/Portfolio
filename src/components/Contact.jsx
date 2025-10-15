@@ -88,16 +88,19 @@ const Contact = () => {
         >
           <input
             type="text"
-            placeholder="Your Name"
+            name="FullName"
+            placeholder="Enter your name"
             className="w-full px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 focus:outline-none focus:border-emerald-500"
           />
           <input
             type="email"
-            placeholder="Your Email"
+            name="email"
+            placeholder="Enter your email"
             className="w-full px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 focus:outline-none focus:border-emerald-500"
           />
           <textarea
-            placeholder="Your Message"
+            placeholder="Leave your Message here"
+            name="message"
             rows={4}
             className="w-full px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 focus:outline-none focus:border-emerald-500"
           ></textarea>
