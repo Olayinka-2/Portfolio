@@ -1,5 +1,28 @@
 const projects = [
   {
+    title: "SmartBudget Fintech App",
+    year: "2025",
+    description:
+      "A modern fintech savings platform inspired by Opay, designed to help users manage money, track expenses, and visualize their financial growth with beautiful charts and intuitive UI components.",
+    features: [
+      "Responsive and visually appealing dashboard layout",
+      "Display of savings balance, recent transactions, and spending summary",
+      "Interactive charts to visualize saving progress using ApexCharts",
+      "Clean, mobile-first design built with Tailwind CSS",
+      "Component-based structure ready for API integration",
+    ],
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "ApexCharts",
+      "JavaScript (ES6+)",
+    ],
+    image: "smartBudget.png",
+    liveDemo: "https://smart-budget-six.vercel.app/",
+    github: "https://github.com/Olayinka-2/smart-budget.git",
+  },
+
+  {
     title: "YouTube Clone",
     year: "2025",
     description:
@@ -45,7 +68,6 @@ const projects = [
     features: [
       "Instant calculation of age in years, months, and days",
       "Responsive and modern design for all devices",
-      ,
       "Lightweight and fast performance",
     ],
     technologies: ["React", "JavaScript", "CSS", "Vercel"],
