@@ -83,8 +83,9 @@ const Contact = () => {
         </div>
 
         {/* Contact Form (Optional) */}
-        <form className="mt-8 space-y-4 max-w-lg mx-auto text-left"
-        onSubmit={onSubmit}
+        <form
+          className="mt-8 space-y-4 max-w-lg mx-auto text-left"
+          onSubmit={onSubmit}
         >
           <input
             type="text"
@@ -108,9 +109,7 @@ const Contact = () => {
             type="submit"
             className="px-5 py-2 rounded-lg text-sm font-medium bg-emerald-500 text-white hover:bg-emerald-600 transition"
           >
-            {
-              result ? "Sending..." : "Send Message"
-            }
+            {result ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>
